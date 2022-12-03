@@ -8,6 +8,12 @@ The script attempts to read from the inverter every time it runs. The first time
 
 You can place this in your crontab to run every minute - or as often as you wish.
 
+Example crontab:
+
+```bash
+* * * * * cd /home/solar/app && ./venv solar.py
+```
+
 ## Configuration
 
 Copy `config.sample.py` to `config.py` and update the configuration.
