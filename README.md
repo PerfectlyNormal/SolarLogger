@@ -45,3 +45,7 @@ Set up your own:
     * Needs at least `write:media` and `write:statuses` scopes in order to work
 3. Copy the client key/secret and access token into `config.py`
 4. Set `mastodon_enabled` to `True` and wait for it to work.
+
+## Credits
+
+Based on a copy of [@edent](https://github.com/edent/)'s [Fronius-DataManager-Solar-Logger](https://github.com/edent/Fronius-DataManager-Solar-Logger).
