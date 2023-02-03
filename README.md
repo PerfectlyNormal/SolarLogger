@@ -30,7 +30,7 @@ Copy `config.sample.py` to `config.py` and update the configuration.
 
 ### Twitter
 
-Hopelessly complicated to get the token, and I don't really remember how to do it. Not a great experience. But it works when done. Create an app and get some tokens.
+(╯°□°）╯︵ ┻━┻
 
 ### Mastodon
 

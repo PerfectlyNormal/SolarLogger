@@ -2,13 +2,6 @@ IP_address = "192.168.1.2"
 
 installed_max = 10000 # Watts
 
-twitter_enabled             = False
-twitter_bearer_token        = ""
-twitter_consumer_key        = ""
-twitter_consumer_secret     = ""
-twitter_access_token        = ""
-twitter_access_token_secret = ""
-
 mastodon_enabled       = True
 mastodon_api_base      = "https://botsin.space"
 mastodon_client_key    = ""

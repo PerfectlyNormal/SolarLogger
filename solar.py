@@ -10,8 +10,6 @@ from astral.sun import sun
 import config
 import data_handler
 from plotter import Plotter
-if config.twitter_enabled:
-    from integration.twitter_integration import TwitterIntegration
 
 if config.mastodon_enabled:
     from integration.mastodon_integration import MastodonIntegration
@@ -46,10 +44,6 @@ async def poll():
         if not os.path.exists(png_file):
             kWh, x, y = data_handler.summarize(csv_file, timezone)
             Plotter(timezone, config.city_name, config.installed_max).generate_image(today, kWh, x, y, png_file)
-
-            if config.twitter_enabled:
-                twitter = TwitterIntegration(config.twitter_bearer_token, config.twitter_consumer_key, config.twitter_consumer_secret, config.twitter_access_token, config.twitter_access_token_secret)
-                twitter.tweet_image(kWh, png_file)
 
             if config.mastodon_enabled:
                 mastodon = MastodonIntegration(config.mastodon_api_base, config.mastodon_client_key, config.mastodon_client_secret, config.mastodon_access_token)
