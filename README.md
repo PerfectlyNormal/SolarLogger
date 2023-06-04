@@ -2,7 +2,7 @@
 
 Log the performance of your solar panels with a GoodWe inverter.
 
-This will create a .csv file with a timestamp, the real-time power being generated (Watts), and total energy generated that day (kWh).
+This will create a .csv file with a timestamp and the real-time power being generated (Watts).
 
 The script attempts to read from the inverter every time it runs. The first time it runs after the sun is down, it generates a PNG and optionally shares it using one of the integrations.
 
