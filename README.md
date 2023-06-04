@@ -26,6 +26,16 @@ Copy `config.sample.py` to `config.py` and update the configuration.
 
 `tz_name`/`tz_region`, `latitude`/`longitude` and `elevation` is used for determining when the sun is up or not.
 
+## Data format
+
+Each run attempts to connect to the inverter and report back. Since the inverter gets its power from the sun, it's not always online.
+Nothing gets written when it does not respond, so each csv-file may have gaps at the beginning and end of the day.
+
+The result gets written to a CSV file with two columns:
+
+1. the timestamp in UTC
+2. the current power in watts
+
 ## Integrations
 
 ### Twitter
